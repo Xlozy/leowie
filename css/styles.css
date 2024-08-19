@@ -1,0 +1,525 @@
+html, body {
+    height: 100%; /* Stellt sicher, dass html und body die volle Höhe des Viewports einnehmen */
+    margin: 0;
+    padding: 0;
+}
+
+.body   {    
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Menü-Stil */
+.menu-single-page {
+    position: fixed; /* Fixiert das Menü an einer Position */
+    top: 0;
+    left: 0;
+    height: 100%; /* Macht das Menü so hoch wie der Viewport */
+    width: 15%; /* Breite der Navigationsleiste */
+    padding: 20px;
+}
+
+.link-zurueck {
+    display: block;
+    margin-bottom: 3em;
+    color: #000000;
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+.link-zurueck:hover {
+    text-decoration: underline;
+}
+
+.menu-single-page ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    line-height: 1em;
+}
+
+.menu-single-page li {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.menu-single-page .sublink {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-single-page .sublink:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#fotografien, #videoessay {
+    padding-top: 70px; /* Um sicherzustellen, dass der Abschnitt nicht vom festen Menü überdeckt wird */
+    margin-top: -70px; /* Gleiche Höhe wie das Padding, um den visuellen Sprung auszugleichen */
+}
+
+.menu-multi-page {
+    position: absolute; /* Fixiert das Menü an einer Position */
+    top: 0;
+    left: 0;
+    height: auto; /* Macht das Menü so hoch wie der Viewport */
+    width: 15%; /* Breite der Navigationsleiste */
+    padding: 20px;
+}
+
+.menu-multi-page ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    line-height: 1em;
+}
+
+.menu-multi-page li {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.menu-multi-page .sublink {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-multi-page .sublink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .menu-single-page,
+    .menu-multi-page {
+        display: none; /* Versteckt die Navigation auf Bildschirmen kleiner als 768px */   
+    }
+
+    .burger-menu {
+        display: block; /* Zeigt das Burger-Menü an */
+        top: 20px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .vvvw .burger-menu {
+        position: fixed;
+    }
+
+    .literary-page .burger-menu {
+        position: absolute;
+    }
+
+    .burger-menu div {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+
+    .menu-single-page.active {
+        display: block;
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: #fff;
+        padding: 20px;
+        padding-top: 80px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    .menu-multi-page.active {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: #fff;
+        padding: 20px;
+        padding-top: 80px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+}
+
+/* HAUPTSEITE INDEX */
+
+.index body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.8em;
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+}
+
+/* Schriftgröße für Tablets und mittelgroße Bildschirme */
+@media (max-width: 1024px) {
+    .index body {
+        font-size: 0.9em;
+    }
+}
+
+/* Schriftgröße für Smartphones und kleinere Bildschirme */
+@media (max-width: 600px) {
+    .index body {
+        font-size: 1em;
+    }
+}
+
+.index .header h1 {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.kurzbio {
+    text-align: left;
+    max-width: 320px;
+}
+
+.kurzbio p {
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.link-gst {
+    color: violet;
+    text-decoration: underline;
+}
+
+.link-vvvw {
+    color: rgb(84, 84, 84);
+    text-decoration: underline;
+}
+
+.link-zitatzitrone {
+    color: rgb(255, 183, 0);
+    text-decoration: underline;
+}
+
+.link-schreibt {
+    color: rgb(0, 55, 255);
+    text-decoration: underline;
+}
+
+#blinking-word {
+    color: rgb(0, 55, 255);
+}
+
+.newsletter {
+    position: absolute;
+    top: 87vh;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        top: 75vh; /* Passt die Position für kleinere Bildschirme an */
+    }
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    font-size: 0.8em;
+}
+
+.footer-container {
+    position: absolute;
+    top: 100vh;
+    max-width: 1200px;
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.footer-container a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* UNTERSEITE VVVW */
+
+.vvvw body {
+    display: flex;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+}
+
+.vvvw .content {
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.vvvw h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 7vh;
+    margin-top: 15vh;
+}
+
+.vvvw .container-instagram-verweis {
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+hr {
+    max-width: 700px;
+}
+
+.vvvw .instagram-verweis,
+.vvvw .instagram-verweis a {
+    color:#000;
+}
+
+.vvvw .text {
+    max-width: 50%;
+    margin: 0 auto; /* Zentriert den Text innerhalb des Eltern-Containers */
+    text-align: justify; /* Blocksatz */
+    line-height: 1.5em;
+}
+
+/* VVVW Bilder-Konfigurationen */
+
+img {
+    width: 100%; /* Bilder nehmen die volle Breite ihres Containers ein */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    max-width: 700px; /* Optional: Maximale Breite, um Bilder auf großen Bildschirmen nicht zu groß werden zu lassen */
+}
+
+.vvvw .einzelbild figure,
+.vvvw .bildpaar-horizontal figure,
+.vvvw .bildpaar-vertikal figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.vvvw .bildpaar-horizontal figure {
+    width: 30%;
+}
+
+.vvvw .bildpaar-vertikal figure {
+    width: 45%;
+}
+
+
+.vvvw .einzelbild figcaption,
+.vvvw .bildpaar-horizontal figcaption,
+.vvvw .bildpaar-vertikal figcaption {
+    margin-top: 8px;
+    font-size: 0.7em;
+    color: #000000;
+    text-align: center;
+}
+
+.vvvw .einzelbild,
+.vvvw .bildpaar-horizontal,
+.vvvw .bildpaar-vertikal,
+.vvvw .bildtriple {
+    display: flex;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.vvvw .bildpaar-horizontal,
+.vvvw .bildpaar-vertikal,
+.vvvw .bildtriple {
+    justify-content: center;
+    gap: 5%;
+}
+
+.vvvw .einzelbild, 
+.vvvw .bildpaar-vertikal {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Anpassungen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .vvvw .content {
+        margin-top: 5vh;
+        margin-left: 0; /* Entfernt das linke Margin für kleinere Bildschirme */
+    }
+
+    .vvvw figure {
+        width: 100%;
+    }
+
+    .vvvw .bildpaar-horizontal,
+    .vvvw .bildpaar-vertikal,
+    .vvvw .bildtriple {
+        flex-direction: column; /* Stellt sicher, dass die Bilder untereinander angeordnet werden */
+        align-items: center;
+    }
+
+    .vvvw .bildpaar-horizontal figure,
+    .vvvw .bildpaar-vertikal figure {
+        width: 100%; /*muss separat definiert werden, weil für die desktop version auch spezifische angaben gemacht werden*/
+    }
+
+    .vvvw .einzelbild,
+    .vvvw .bildpaar-horizontal,
+    .vvvw .bildpaar-vertikal,
+    .vvvw .bildtriple {
+        display: flex;
+        margin: 0;
+}
+
+    .vvvw .container-instagram-verweis {
+        text-align: center;
+        margin: 5vh 0 5vh 0;
+        font-size: 1em;
+    }
+
+    .vvvw h1 {
+        margin: 6vh 0 8vh 0;
+        font-size: 1.2em; /* Reduziert die Größe der Überschrift für kleinere Bildschirme */
+    }
+
+    .vvvw .text {
+        max-width: 100%; /* Stellt sicher, dass der Textbereich die volle Breite einnimmt */
+        line-height: 1.4; /* Kompaktere Zeilenhöhe für bessere Lesbarkeit */
+        margin-bottom: 7vh;
+    }
+
+}
+
+/* UNTERSEITE lit */
+
+/* Inhaltsbereich-Stil */
+.literary-page body {
+    display: flex;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    min-height: 100vh; /* Stellt sicher, dass der Body die volle Höhe des Viewports einnimmt */
+    flex-direction: column;
+}
+
+.literary-page .content {
+    margin-left: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 33vh;
+    text-align: justify;
+    line-height: 2;
+    flex: 1; /* Damit der Inhaltsbereich den verfügbaren Platz einnimmt */
+}
+
+.literary-page .content::after {
+    content: "";
+    display: block;
+    height: 36vh; /* Fügt zusätzlichen Raum am Ende des Inhaltsbereichs hinzu */
+}
+
+.literary-page .poem {
+    margin-top: 5%;
+    line-height: 1;
+}
+
+.literary-page h1 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.literary-page h2 {
+    text-align: left;
+    font-size: 1.35em;
+}
+
+/* Generatives Gedicht: Dreht sich doch alles um mich (unendlich) */
+
+.dreht-sich-doch-alles-um-mich-unendlich body {
+    display: flex;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    min-height: 100vh; /* Stellt sicher, dass der Body die volle Höhe des Viewports einnimmt */
+    flex-direction: column;
+}
+
+.dreht-sich-doch-alles-um-mich-unendlich #wrapper {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 100vh;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.dreht-sich-doch-alles-um-mich-unendlich #content {
+  margin-left: 30%;
+  margin-right: 15%;
+  padding-top: 33vh;
+  padding-bottom: 33vh;
+  height: 100%;
+}
+
+
+
+.dreht-sich-doch-alles-um-mich-unendlich p,
+.dreht-sich-doch-alles-um-mich-unendlich button {
+  font-family: helvetica;
+}
+
+.dreht-sich-doch-alles-um-mich-unendlich p {
+  font-size: 100%;
+  margin: 0;
+  line-height: 2;
+}
+
+.dreht-sich-doch-alles-um-mich-unendlich .version-anzeige {
+    padding-top: 10vh;
+    word-wrap: break-word;
+}
+
+@media screen and (min-width: 480px) {
+    .dreht-sich-doch-alles-um-mich-unendlich  p {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+    .literary-page .content {
+        margin-left:0;
+        margin-top: 4vh;
+        padding: 5%;
+    }
+}
+
+/*IMPRESSUM & DATENSCHUTZERKLÄRUNG (Seiten bezieht sich auf class=index)*/
+
+.link-zurueck-impressum {
+    position: absolute;
+    top: 87vh;
+    color: #000000;
+    text-decoration: none;
+}
+
+.link-zurueck-datenschutz {
+    color: #000000;
+    text-decoration: none;
+}
+
+.link-zurueck-impressum:hover,
+.link-zurueck-datenschutz:hover {
+    text-decoration: underline;;
+}
