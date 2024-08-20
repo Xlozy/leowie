@@ -1,0 +1,2 @@
+User-agent: *Disallow: /leowie.ch/html/datenschutzerklaerung.htmlDisallow: /leowie.ch/html/impressum.htmlDisallow: /leowie.ch/scripts/# Erlaubt das Crawlen aller anderen HTML-Seiten im Verzeichnis "schreibt-wieso"Allow: /leowie.ch/html/schreibt-wieso/
+Allow: /leowie.ch/img/# Optional: Link zur Sitemap (falls vorhanden)# Sitemap: https://deine-domain.com/sitemap.xml
