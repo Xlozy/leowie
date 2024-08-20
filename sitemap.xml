@@ -110,6 +110,11 @@
 
   <!-- Bilder (optional, falls du sie speziell indexieren möchtest) -->
   <url>
+    <loc>https://leowie.ch/img/favicon.ico</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://leowie.ch/img/PW0A2305_sw-dunkel_web.jpg</loc>
     <priority>0.3</priority>
     <changefreq>monthly</changefreq>
