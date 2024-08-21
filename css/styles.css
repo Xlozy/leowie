@@ -441,9 +441,18 @@ img {
     font-size: 1.35em;
 }
 
+@media (max-width: 768px) {
+
+    .literary-page .content {
+        margin-left:0;
+        margin-top: 4vh;
+        padding: 5%;
+    }
+}
+
 /* Generatives Gedicht: Dreht sich doch alles um mich (unendlich) */
 
-.dreht-sich-doch-alles-um-mich-unendlich body {
+.dreht-sich-doch-alles-um-mich body {
     display: flex;
     margin: 0;
     font-family: 'Helvetica', sans-serif;
@@ -452,7 +461,7 @@ img {
     flex-direction: column;
 }
 
-.dreht-sich-doch-alles-um-mich-unendlich #wrapper {
+.dreht-sich-doch-alles-um-mich #wrapper {
   top: 0;
   right: 0;
   left: 0;
@@ -464,7 +473,7 @@ img {
   vertical-align: bottom;
 }
 
-.dreht-sich-doch-alles-um-mich-unendlich #content {
+.dreht-sich-doch-alles-um-mich #content {
   margin-left: 30%;
   margin-right: 15%;
   padding-top: 33vh;
@@ -472,38 +481,83 @@ img {
   height: 100%;
 }
 
-
-
-.dreht-sich-doch-alles-um-mich-unendlich p,
-.dreht-sich-doch-alles-um-mich-unendlich button {
+.dreht-sich-doch-alles-um-mich p,
+.dreht-sich-doch-alles-um-mich button {
   font-family: helvetica;
 }
 
-.dreht-sich-doch-alles-um-mich-unendlich p {
+.dreht-sich-doch-alles-um-mich p {
   font-size: 100%;
   margin: 0;
   line-height: 2;
 }
 
-.dreht-sich-doch-alles-um-mich-unendlich .version-anzeige {
+.dreht-sich-doch-alles-um-mich .version-anzeige {
     padding-top: 10vh;
     word-wrap: break-word;
+    text-align: justify;
+    padding: 5%;
 }
 
 @media screen and (min-width: 480px) {
-    .dreht-sich-doch-alles-um-mich-unendlich  p {
+    .dreht-sich-doch-alles-um-mich  p {
     font-size: 100%;
   }
 }
 
 @media (max-width: 768px) {
 
-    .literary-page .content {
-        margin-left:0;
-        margin-top: 4vh;
+    .dreht-sich-doch-alles-um-mich body {
+        display: flex;
+        margin: 0;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 1em;
+        min-height: 100vh; /* Stellt sicher, dass der Body die volle Höhe des Viewports einnimmt */
+        flex-direction: column;
+    }
+    
+    .dreht-sich-doch-alles-um-mich #wrapper {
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100vw;
+      margin: 0;
+      overflow-y: auto;
+      max-height: 100vh;
+      text-align: center;
+      vertical-align: bottom;
+    }
+    
+    .dreht-sich-doch-alles-um-mich #content {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
+      }
+    
+    .dreht-sich-doch-alles-um-mich p,
+    .dreht-sich-doch-alles-um-mich button {
+      font-family: helvetica;
+    }
+    
+    .dreht-sich-doch-alles-um-mich p {
+      font-size: 100%;
+      margin: 0;
+      line-height: 2;
+    }
+    
+    .dreht-sich-doch-alles-um-mich .version-anzeige {
+        padding-top: 10vh;
+        word-wrap: break-word;
+    }
+
+    .dreht-sich-doch-alles-um-mich .burger-menu {
         padding: 5%;
     }
+ 
 }
+
 
 /*IMPRESSUM & DATENSCHUTZERKLÄRUNG (Seiten bezieht sich auf class=index)*/
 
