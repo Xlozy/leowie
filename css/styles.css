@@ -193,7 +193,7 @@ section {
 }
 
 .link-vrp {
-    color: rgb(167, 78, 101);
+    color: rgba(167, 78, 102, 0.669);
     text-decoration: underline;
 }
 
