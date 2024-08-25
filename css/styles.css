@@ -188,22 +188,22 @@ section {
 }
 
 .link-gst {
-    color: rgba(235, 95, 235);
+    color: rgb(179, 0, 255);
     text-decoration: underline;
 }
 
 .link-vrp {
-    color: rgb(164, 82, 104);
+    color: rgb(240, 47, 124);
     text-decoration: underline;
 }
 
 .link-vvvw {
-    color: rgb(84, 84, 84);
+    color: rgb(143, 141, 141);
     text-decoration: underline;
 }
 
 .link-zitatzitrone {
-    color: rgb(255, 183, 0);
+    color: rgb(255, 217, 0);
     text-decoration: underline;
 }
 
