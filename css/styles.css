@@ -192,6 +192,11 @@ section {
     text-decoration: underline;
 }
 
+.link-vrp {
+    color: rgb(167, 78, 101);
+    text-decoration: underline;
+}
+
 .link-vvvw {
     color: rgb(84, 84, 84);
     text-decoration: underline;
