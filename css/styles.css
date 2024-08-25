@@ -188,12 +188,12 @@ section {
 }
 
 .link-gst {
-    color: rgba(238, 130, 238, 0.704);
+    color: rgba(235, 95, 235);
     text-decoration: underline;
 }
 
 .link-vrp {
-    color: rgba(167, 78, 102, 0.669);
+    color: rgb(169, 58, 87);
     text-decoration: underline;
 }
 
