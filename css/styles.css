@@ -198,12 +198,17 @@ section {
 }
 
 .link-vvvw {
-    color: rgb(104, 103, 103);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 
 .link-zitatzitrone {
     color: rgb(255, 196, 0);
+    text-decoration: underline;
+}
+
+.link-banane {
+    color: rgb(0, 192, 93);
     text-decoration: underline;
 }
 
