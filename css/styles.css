@@ -215,6 +215,7 @@ section {
 .link-schreibt {
     color: rgb(0, 55, 255);
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 #blinking-word {
