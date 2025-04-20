@@ -1,167 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Indexseite -->
+  <!-- Hauptseiten -->
   <url>
-    <loc>https://leowie.ch/index.html</loc>
+    <loc>https://leowie.ch/</loc>
     <priority>1.0</priority>
-    <lastmod>2024-08-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Wirft Schatten -->
   <url>
     <loc>https://leowie.ch/wirft-schatten.html</loc>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Literarische Seiten -->
+  <url>
+    <loc>https://leowie.ch/silent-reading-poller-party.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Literarische Texte -->
+  <url>
+    <loc>https://leowie.ch/schreibt-wieso/schreibt-wieso.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/am-eingang-zur-nacht.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/der-katze-nacht.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/die-eifersucht-der-elena-wiegl.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/dreht-sich-doch-alles-um-mich-720.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/dreht-sich-doch-alles-um-mich-unendlich.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/ein-gedicht-für-zwischendurch.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/ich-zaehle-sekunden.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/im-gaehnen-eines-riesen.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/latte-art.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/lesen.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/morgenkraehen.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/schlafen-gehen-1.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/schliessung-des-kreises.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>https://leowie.ch/schreibt-wieso/schreibt-wieso.html</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/spazieren-auf-schollen.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/studieren-heisst.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/tenu-und-die-tak-katze.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://leowie.ch/schreibt-wieso/transit-reisefuehrer.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Bilder (optional, falls du sie speziell indexieren möchtest) -->
-  <url>
-    <loc>https://leowie.ch/img/favicon.ico</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A2305_sw-dunkel_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A2305_sw-hell_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A3183_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A3302_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A3663_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A3669_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/PW0A4795_web.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/Videoessay-Momentaufnahme-1.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/Videoessay-Momentaufnahme-2.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://leowie.ch/img/Videoessay-Momentaufnahme-3.webp</loc>
-    <priority>0.3</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 </urlset>
