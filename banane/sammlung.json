@@ -1,0 +1,20 @@
+[
+    {
+        "id": "ABBA_###FFFF00###FFFF00###FFFF00",
+        "name": "Léonard",
+        "description": "Drei gelbe Felder am rechten Rand. Eine Banane, die wie eine Banane aussieht. Steht für mein Bedürfnis nach Orientierung — das Naheliegende sehen können.",
+        "date": "2026-05-02"
+    },
+    {
+        "id": "ABBA_#0084FF##1B5E20##0084FF##1B5E20##0084FF",
+        "name": "Probebanane Zwei",
+        "description": "Zwei Farben, weil mir zwei Dinge gleichzeitig wichtig sind: berufliche Anerkennung (blau) und Stille (grün). Sie sind über die Diagonale verbunden, aber ich frage mich oft, ob sie sich nicht in Wahrheit ausschliessen.",
+        "date": "2026-05-02"
+    },
+    {
+        "id": "ABBA_#####B300FF####",
+        "name": "anonym",
+        "description": "",
+        "date": "2026-05-02"
+    }
+]

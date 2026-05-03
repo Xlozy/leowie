@@ -593,3 +593,328 @@ img {
 .link-zurueck-datenschutz:hover {
     text-decoration: underline;;
 }
+
+/* ============================================================
+   DIE ABSTRAKTE BANANE
+   Banane-spezifische Styles. Wird an die bestehende styles.css
+   angehängt. Layout (Helvetica, 15%-Sidebar, 33vh Padding,
+   line-height 2) kommt automatisch über class="literary-page".
+   ============================================================ */
+
+/* Zwischenraum zwischen den drei Text-Sektionen */
+.literary-page .text-block {
+    margin-top: 5vh;
+}
+
+.literary-page .fragen-liste {
+    padding-left: 1.5em;
+}
+
+.literary-page .fragen-liste li {
+    margin-bottom: 1em;
+}
+
+/* ----- Visualisierung / Generator ----- */
+
+.literary-page .programm {
+    margin: 4vh 0;
+    text-align: left;
+}
+
+#pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 4px;
+    margin: 3vh 0;
+}
+
+.pixel {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.pixel:hover {
+    outline: 1px solid #999;
+}
+
+.pixel:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+#colorSlider {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 2vh 0;
+    line-height: 1;
+}
+
+#colorSlider label {
+    font-size: 0.9em;
+}
+
+#colorSlider input[type="range"] {
+    flex: 0 1 200px;
+}
+
+#colorSlider input[type="text"] {
+    width: 8em;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.9em;
+    padding: 0.3em 0.5em;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+}
+
+#colorDisplay {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+    background-color: #FFFF00;
+}
+
+.button-row {
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    line-height: 1;
+}
+
+.literary-page button {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.9em;
+    padding: 0.6em 1.2em;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.literary-page button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.literary-page button.secondary {
+    border-color: #888;
+    color: #888;
+}
+
+.literary-page button.secondary:hover {
+    background-color: #888;
+    color: #fff;
+}
+
+/* ----- Einreich-Formular ----- */
+
+#submission-form {
+    margin-top: 4vh;
+    padding: 3vh 3vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 1.6;
+}
+
+#submission-form .form-intro {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+#submission-form label {
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+}
+
+#submission-form .required {
+    color: #888;
+}
+
+#submission-form input[type="text"],
+#submission-form textarea {
+    width: 100%;
+    max-width: 30em;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    line-height: 1.4;
+}
+
+#submission-form textarea {
+    resize: vertical;
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+#submission-status {
+    margin-top: 2em;
+    font-size: 0.95em;
+    min-height: 1.5em;
+}
+
+#submission-status.success {
+    color: #006600;
+}
+
+#submission-status.error {
+    color: #aa0000;
+}
+
+/* ----- Sammlung-Tabelle ----- */
+
+#sammlung {
+    margin-top: 10vh;
+}
+
+#sammlung-info {
+    font-size: 0.95em;
+    color: #555;
+}
+
+#sammlung-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2vh;
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#sammlung-table thead th {
+    border-bottom: 1px solid #000;
+    padding: 0.6em 0.5em;
+    font-weight: normal;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#sammlung-table tbody tr.zeile {
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#sammlung-table tbody tr.zeile:hover {
+    background-color: #f7f7f7;
+}
+
+#sammlung-table tbody tr.zeile td {
+    padding: 0.6em 0.5em;
+    vertical-align: top;
+}
+
+#sammlung-table tbody tr.zeile td.id-cell {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85em;
+    white-space: nowrap;
+    color: #444;
+}
+
+#sammlung-table tbody tr.zeile td.beschreibung-cell {
+    color: #555;
+}
+
+#sammlung-table tbody tr.detail {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+#sammlung-table tbody tr.detail td {
+    padding: 2em;
+}
+
+.detail-content {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.detail-banane {
+    flex: 0 0 auto;
+    background: #fff;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.detail-banane svg {
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+
+.detail-text {
+    flex: 1 1 200px;
+    line-height: 1.6;
+}
+
+.detail-text dl {
+    margin: 0;
+}
+
+.detail-text dt {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+    margin-top: 1em;
+}
+
+.detail-text dt:first-child {
+    margin-top: 0;
+}
+
+.detail-text dd {
+    margin: 0.3em 0 0 0;
+}
+
+@media (max-width: 768px) {
+    #pixel-grid {
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
+    }
+
+    .pixel {
+        width: 60px;
+        height: 60px;
+    }
+
+    #sammlung-table tbody tr.zeile td.beschreibung-cell {
+        max-width: 12em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .detail-content {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pixel,
+    .literary-page button {
+        transition: none !important;
+    }
+}

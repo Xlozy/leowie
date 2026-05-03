@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de" class="literary-page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die abstrakte Banane</title>
+    <meta name="description" content="Die abstrakte Banane. Ein philosophisches Konzept zur selbstkritischen Wertereflexion. Von Léonard Wiesendanger.">
+    <meta property="og:title" content="Die abstrakte Banane">
+    <meta property="og:description" content="Ein philosophisches Konzept zur selbstkritischen Wertereflexion.">
+    <meta property="og:url" content="https://dieabstraktebanane.ch">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Die abstrakte Banane",
+      "description": "Ein philosophisches Konzept zur selbstkritischen Wertereflexion.",
+      "url": "https://dieabstraktebanane.ch",
+      "author": {
+        "@type": "Person",
+        "name": "Léonard Wiesendanger",
+        "url": "https://leowie.ch"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="literary-page">
+
+    <div class="burger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav class="menu-multi-page">
+        <ul>
+            <li><a href="/index.html" class="link-zurueck">[Zurück zur Startseite]</a></li>
+            <li><a href="#text" class="sublink">Text</a></li>
+            <li><a href="#fragen" class="sublink">Drei Fragen</a></li>
+            <li><a href="#visualisierung" class="sublink">Visualisierung</a></li>
+            <li><a href="#sammlung" class="sublink">Sammlung</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Die abstrakte Banane</h1>
+
+        <section id="text">
+            <p>Vom Affen und Tier unterscheidet sich der Mensch vielleicht vor allem durch seine Vorstellungskraft, auf ihr baut der Rest: die Tempel und die Arbeit. Seine Vorstellungskraft lässt den Menschen nicht nach der Banane greifen, die vor ihm wächst. Sie ist der Grund für seinen Reichtum an Bananen und auch der Grund, weshalb er seinen Reichtum an Bananen nicht geniessen kann. Seine Vorstellungskraft setzt ihn, den Menschen, einer anhaltenden inneren Spannung aus, einer lebenslangen Zerreisprobe. Sie kulminiert immer wieder in einer neuen Vorstellung, die ihn antreibt und an der er sich ausrichtet. Diese Vorstellung soll einen Namen erhalten…</p>
+            <p>… für die sich der Mensch einst lang machte und den aufrechten Gang erlernte.</p>
+            <p>… für die er immer mehr sammelt, immer grösser baut, immer weitere Distanzen zurücklegt und seine Kulturtechniken unerschöpflich, Generation für Generation, weiterentwickelt.</p>
+            <p>Die abstrakte Banane.</p>
+        </section>
+
+        <section class="text-block">
+            <p>Die abstrakte Banane hat keine feste Grösse oder Form, keine eindeutige Farbe und auch keinen bestimmten Geschmack. Sie kann nicht berührt werden. Wir besitzen sie nicht. Sie schwebt uns immer nur vor. Alle Menschen richten sich nach ihr. Sie ist eine Quelle steter Unzufriedenheit und steten Schöpfungsdrangs. Im Bananenvergleich der Menschen ist sie eine Quelle steter Verunsicherung, der Missgunst und der Motivation. Sie bringt die Menschen zusammen und treibt sie auseinander. Die Geschichte des Menschen als Menschen nennen wir für gewöhnlich Kulturgeschichte, und die gesamte Kulturgeschichte, so meine ich herausgefunden zu haben, ist eine Bananengeschichte. Wer weiss, vielleicht sind die wirklich schlauen Affen auf den Bäumen geblieben.</p>
+        </section>
+
+        <section class="text-block">
+            <p>Das ist kein Kulturpessimismus. Das ist Kulturhumorismus. In witzlosem Ernst arbeitet der Mensch ganz nach Bananalogik Richtung Banane und merkt nicht, dass diese Banane eine abstrakte Banane ist. Wenn er sich zum Affen machen würde, könnte er wenigstens klettern! Stattdessen bleibt er früher oder später hängen: unzufrieden und unfähig, seine Banane neu zu denken.</p>
+            <p>Was tun?</p>
+            <p>Die «abstrakte Banane» ist ein philosophisches Konzept, das zur Reflexion der eigenen Ziele und Werte anleiten möchte.</p>
+        </section>
+
+        <section id="fragen">
+            <h2>Drei Fragen</h2>
+            <p>Denke Deine abstrakte Banane. Stelle Dir für den Anfang folgende drei Fragen:</p>
+            <ol class="fragen-liste">
+                <li>Was für einer abstrakten Banane hänge ich nach? – was ist mir wichtig?</li>
+                <li>Warum hänge ich dieser Banane nach? – warum ist mir das wichtig?</li>
+                <li>Von was und von wem mache ich mich abhängig, wenn ich dieser Banane anhänge? – wenn mir das wichtig ist?</li>
+            </ol>
+        </section>
+
+        <section id="visualisierung">
+            <h2>Visualisierung</h2>
+            <p>Visualisiere Deine abstrakte Banane. Du kannst sie selbst zeichnen, indem Du Felder anklickst, oder mit dem Generator-Knopf eine erzeugen lassen. Die Farbfelder müssen miteinander verbunden sein.</p>
+
+            <div class="programm">
+                <div id="pixel-grid" role="grid" aria-label="Bananen-Raster"></div>
+
+                <div id="colorSlider">
+                    <label for="hue">Farbe</label>
+                    <input type="range" id="hue" name="hue" min="0" max="360">
+                    <input type="text" id="hexInput" name="hexInput" maxlength="7" value="#FFFF00" aria-label="Hex-Farbwert">
+                    <div id="colorDisplay" aria-hidden="true"></div>
+                </div>
+
+                <div class="button-row">
+                    <button id="generateButton" type="button">Generieren</button>
+                    <button id="downloadButton" type="button">Herunterladen</button>
+                    <button id="submitButton" type="button">Herunterladen &amp; einreichen</button>
+                </div>
+            </div>
+
+            <div id="submission-form" hidden>
+                <p class="form-intro">Reiche Deine Banane für die Sammlung ein. Sie erscheint dort nach Prüfung. Der Download startet nach dem Absenden automatisch.</p>
+
+                <label for="submitName">Name oder Pseudonym <span class="required">*</span></label>
+                <input type="text" id="submitName" name="name" required minlength="2" maxlength="80" autocomplete="off">
+
+                <label for="submitDescription">Beschreibung Deiner abstrakten Banane (optional)</label>
+                <textarea id="submitDescription" name="description" maxlength="500" rows="4"></textarea>
+
+                <input type="text" id="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
+
+                <div class="button-row">
+                    <button id="submitConfirm" type="button">Absenden</button>
+                    <button id="submitCancel" type="button" class="secondary">Abbrechen</button>
+                </div>
+                <p id="submission-status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="sammlung">
+            <h2>Sammlung</h2>
+            <p id="sammlung-info"></p>
+            <table id="sammlung-table" hidden>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody id="sammlung-tbody"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/scripts/burger-menu-multi-page.js"></script>
+    <script src="/scripts/banane.js"></script>
+</body>
+
+</html>
