@@ -12,7 +12,7 @@
     const GRID_SIZE = 3;
     const PIXEL_COUNT = GRID_SIZE * GRID_SIZE;
     const DEFAULT_HEX = '#FFFF00';
-    const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/vvvw@bluewin.ch';
+    const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/42eabba95174e976eb928ac9c2dfbd88';
     const SAMMLUNG_PFAD = '/banane/sammlung.json';
 
     // ---------- State ----------
