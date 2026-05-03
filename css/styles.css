@@ -602,17 +602,7 @@ img {
    ============================================================ */
 
 /* Zwischenraum zwischen den drei Text-Sektionen */
-.literary-page .text-block {
-    margin-top: 5vh;
-}
 
-.literary-page .fragen-liste {
-    padding-left: 1.5em;
-}
-
-.literary-page .fragen-liste li {
-    margin-bottom: 1em;
-}
 
 /* ----- Visualisierung / Generator ----- */
 
