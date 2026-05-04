@@ -885,6 +885,11 @@ img {
     margin: 0.3em 0 0 0;
 }
 
+.detail-text dd code {
+    word-break: break-all;
+    overflow-wrap: anywhere;
+}
+
 @media (max-width: 768px) {
     #pixel-grid {
         grid-template-columns: repeat(3, 60px);
@@ -957,7 +962,6 @@ img {
 
     #sammlung-table tbody tr.zeile td.beschreibung-cell {
         color: #555;
-        font-size: 0.95em;
     }
 
     #sammlung-table tbody tr.detail td {
