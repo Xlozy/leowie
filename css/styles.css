@@ -782,7 +782,12 @@ img {
     font-size: 0.95em;
     line-height: 1.5;
     text-align: left;
+    table-layout: fixed;
 }
+
+#sammlung-table col.col-id { width: 18em; }
+#sammlung-table col.col-name { width: 10em; }
+#sammlung-table col.col-beschreibung { width: auto; }
 
 #sammlung-table thead th {
     border-bottom: 1px solid #000;
@@ -805,17 +810,26 @@ img {
 #sammlung-table tbody tr.zeile td {
     padding: 0.6em 0.5em;
     vertical-align: top;
+    overflow-wrap: anywhere;
+    word-break: break-all;
 }
 
 #sammlung-table tbody tr.zeile td.id-cell {
     font-family: 'Courier New', monospace;
-    font-size: 0.85em;
-    white-space: nowrap;
+    font-size: 0.8em;
     color: #444;
+    line-height: 1.4;
+}
+
+#sammlung-table tbody tr.zeile td.name-cell {
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 #sammlung-table tbody tr.zeile td.beschreibung-cell {
     color: #555;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 #sammlung-table tbody tr.detail {
@@ -883,11 +897,53 @@ img {
         height: 60px;
     }
 
+    /* Tabelle wird auf schmalen Bildschirmen zu Karten umgebaut.
+       Jede Zeile = eine Karte, Spalten untereinander, mit Labels. */
+    #sammlung-table,
+    #sammlung-table thead,
+    #sammlung-table tbody,
+    #sammlung-table tr,
+    #sammlung-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #sammlung-table {
+        table-layout: auto;
+    }
+
+    #sammlung-table thead {
+        position: absolute;
+        left: -9999px;
+    }
+
+    #sammlung-table tbody tr.zeile {
+        padding: 1em 0;
+    }
+
+    #sammlung-table tbody tr.zeile td {
+        padding: 0.2em 0;
+        border: none;
+    }
+
+    #sammlung-table tbody tr.zeile td.id-cell {
+        font-size: 0.75em;
+        line-height: 1.5;
+    }
+
+    #sammlung-table tbody tr.zeile td.name-cell::before {
+        content: "";
+        display: block;
+        height: 0.4em;
+    }
+
     #sammlung-table tbody tr.zeile td.beschreibung-cell {
-        max-width: 12em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        color: #555;
+        font-size: 0.95em;
+    }
+
+    #sammlung-table tbody tr.detail td {
+        padding: 1em 0;
     }
 
     .detail-content {

@@ -1,6 +1,6 @@
 /* ============================================================
    DIE ABSTRAKTE BANANE — Skript
-   Wird auf der Seite /abstraktebanane/index.html geladen.
+   Wird auf der Seite /banane/index.html geladen.
    Burger-Menu-Logik ist NICHT in dieser Datei – sie wird
    durch /scripts/burger-menu-multi-page.js abgedeckt.
    ============================================================ */
@@ -13,7 +13,7 @@
     const PIXEL_COUNT = GRID_SIZE * GRID_SIZE;
     const DEFAULT_HEX = '#FFFF00';
     const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/42eabba95174e976eb928ac9c2dfbd88';
-    const SAMMLUNG_PFAD = '/abstraktebanane/sammlung.json';
+    const SAMMLUNG_PFAD = '/banane/sammlung.json';
 
     // ---------- State ----------
     let pixelColors = new Array(PIXEL_COUNT).fill(null);
@@ -433,6 +433,7 @@
                 row.appendChild(idCell);
 
                 const nameCell = document.createElement('td');
+                nameCell.className = 'name-cell';
                 nameCell.textContent = entry.name || '—';
                 row.appendChild(nameCell);
 
