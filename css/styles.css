@@ -935,7 +935,6 @@ img {
     #sammlung-table tbody tr.zeile td.beschreibung-cell::before {
         display: block;
         font-family: 'Helvetica', sans-serif;
-        font-size: 0.85em;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: #888;
