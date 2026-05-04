@@ -13,7 +13,7 @@
     const PIXEL_COUNT = GRID_SIZE * GRID_SIZE;
     const DEFAULT_HEX = '#FFFF00';
     const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/42eabba95174e976eb928ac9c2dfbd88';
-    const SAMMLUNG_PFAD = '/banane/sammlung.json';
+    const SAMMLUNG_PFAD = '/abstraktebanane/sammlung.json';
 
     // ---------- State ----------
     let pixelColors = new Array(PIXEL_COUNT).fill(null);
