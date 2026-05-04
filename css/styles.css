@@ -816,7 +816,6 @@ img {
 
 #sammlung-table tbody tr.zeile td.id-cell {
     font-family: 'Courier New', monospace;
-    font-size: 0.8em;
     color: #444;
     line-height: 1.4;
 }
@@ -931,10 +930,31 @@ img {
         line-height: 1.5;
     }
 
-    #sammlung-table tbody tr.zeile td.name-cell::before {
-        content: "";
+    /* Labels vor allen drei Zellen — gleicher Stil wie in der Detail-Ansicht */
+    #sammlung-table tbody tr.zeile td.id-cell::before,
+    #sammlung-table tbody tr.zeile td.name-cell::before,
+    #sammlung-table tbody tr.zeile td.beschreibung-cell::before {
         display: block;
-        height: 0.4em;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 0.85em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #888;
+        margin-top: 0.8em;
+        margin-bottom: 0.2em;
+    }
+
+    #sammlung-table tbody tr.zeile td.id-cell::before {
+        content: "ID";
+        margin-top: 0;
+    }
+
+    #sammlung-table tbody tr.zeile td.name-cell::before {
+        content: "Name";
+    }
+
+    #sammlung-table tbody tr.zeile td.beschreibung-cell::before {
+        content: "Beschreibung";
     }
 
     #sammlung-table tbody tr.zeile td.beschreibung-cell {

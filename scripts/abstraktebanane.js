@@ -1,6 +1,6 @@
 /* ============================================================
    DIE ABSTRAKTE BANANE — Skript
-   Wird auf der Seite /banane/index.html geladen.
+   Wird auf der Seite /abstraktebanane/index.html geladen.
    Burger-Menu-Logik ist NICHT in dieser Datei – sie wird
    durch /scripts/burger-menu-multi-page.js abgedeckt.
    ============================================================ */
